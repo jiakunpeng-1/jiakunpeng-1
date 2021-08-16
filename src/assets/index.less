@@ -1,0 +1,42 @@
+// 定义全局变量
+body {
+    // 划过过时的北京颜色
+    --hover-color: #0EB9B1;
+}
+
+.color-font {
+    color: var(--hover-color);
+}
+
+.hover-color {
+    background: var(--hover-color);
+}
+
+// 中部内容区域公共样式
+.contentInner {
+
+    // 页面头部
+    .page-header {
+        margin: 20px;
+
+        h3 {
+            font-size: 1.75rem;
+            color: #666;
+
+            span {
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+
+    // 页面内容
+    .innerContent {
+        background: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 2px #aab2bd;
+        text-align: left;
+        border-radius: 4px;
+    }
+}
