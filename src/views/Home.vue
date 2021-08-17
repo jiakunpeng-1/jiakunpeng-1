@@ -85,31 +85,6 @@ export default {
           url: "/aa"
         },
         {
-          name: "一级导航",
-          children: [
-            {
-              name: "一级选项1",
-              title: "系统设置",
-              instruction: "存储路径设置，挂载点设置等",
-              url: "/one"
-            },
-            {
-              name: "一级选项1",
-              title: "管理员设置",
-              instruction: "存储路径设置，挂载点设置等",
-              url: "/two"
-            },
-            {
-              name: "一级选项1",
-              url: "/three"
-            }
-          ]
-        },
-        {
-          name: "0级导航",
-          url: "/ab"
-        },
-        {
           name: "二级导航",
           children: [
             {

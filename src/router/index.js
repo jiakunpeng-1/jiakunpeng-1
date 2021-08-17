@@ -3,7 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import store from '../store'
 import Login from '../views/Login.vue'
-
+const one = () => import('../components/one/A.vue')
+const tow = () => import('../components/one/B.vue')
+const three = () => import('../components/one/C.vue')
+const four = () => import('../components/one/P.vue')
 Vue.use(VueRouter)
 const routes = [{
     path: '/',
@@ -11,27 +14,19 @@ const routes = [{
     component: Home,
     children: [{
         path: 'one',
-        component: function () {
-          return import( /* webpackChunkName: "about" */ '../components/one/A.vue')
-        }
+        component: one
       },
       {
         path: 'two',
-        component: function () {
-          return import( /* webpackChunkName: "about" */ '../components/one/B.vue')
-        }
+        component: tow
       },
       {
         path: 'three',
-        component: function () {
-          return import( /* webpackChunkName: "about" */ '../components/one/C.vue')
-        }
+        component: three
       },
       {
         path: 'four',
-        component: function () {
-          return import( /* webpackChunkName: "about" */ '../components/one/P.vue')
-        }
+        component: four
       },
       {
         path: 'aa',
